@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+ 
+    <style>
+        body {
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial;
+        }
+ 
+        .calculator {
+            width: 600px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+ 
+        .display {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: right;
+            font-size: 20px;
+        }
+ 
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+ 
+        td {
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 18px;
+            font-size: 18px;
+        }
+ 
+        .operator {
+            background-color: #eee;
+        }
+ 
+        .equal {
+            background-color: rgb(240, 100, 0);
+            color: white;
+        }
+    </style>
+</head>
+ 
+<body>
+<div class="calculator">
+    <div class="display">0</div>
+    <table>
+        <tr>
+            <td class="operator">+</td>
+            <td class="operator">-</td>
+            <td class="operator">×</td>
+            <td class="operator">÷</td>
+        </tr>
+ 
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td class="equal" rowspan="4">=</td>
+        </tr>
+ 
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+ 
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+ 
+        <tr>
+            <td>0</td>
+            <td>.</td>
+            <td>AC</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
+ 
