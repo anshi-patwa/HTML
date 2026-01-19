@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script>
+    //page loaded
+        //function pageload() {
+         // alert("Page is loaded");
+       // }
+        // if their is any error with image or image url this function will execute
+        function imageError() {
+            alert("The image could not be loaded.");
+          }
+          //when submit buttion is clicked this fuction will execute
+          function submitForm() {
+        document.getElementById("msg").innerHTML = "Form has been Submitted";
+      }
+      // happens when element will get in focus  
+      function focusEvent() {
+        document.getElementById("eventMsg").innerHTML = "Input field focused";
+    }
+    // will happen when we will move to anthoer event(happens when focus is shifted)
+    function blurEvent() {
+        document.getElementById("eventMsg").innerHTML = "Input field lost focus";
+    }
+
+    //happens when another element is selected from exixting list
+    function changeEvent() {
+        alert("Job Role changed");
+    }
+    
+    //occurs when the mouse pointer enters an element.
+    function mouseOverEvent() {
+        document.getElementById("hoverText").style.color = "red";
+    }
+      </script>   
+  </head>
+
+  <body >
+      <img src="https://satvasolutions.com/wp-content/uploads/2024/08/240-x-62.webp" alt="Logo of Satva Solution" onerror="imageError()">
+     <h2><a href="https://satvasolutions.com/">Visit Satva Solutions</a> </h2>
+
+      <p id="hoverText" onmouseover="mouseOverEvent()">
+         Hover over this text</p>
+
+      <p id="eventMsg" style="color:green;"></p>
+
+
+      <form>
+           <fieldset>
+          <legend> <h3>
+          Please Fill the Form:
+          </h3></legend>
+         <label>Enter Your First Name: </label>
+         <input type="text" onfocus="focusEvent()" onblur="blurEvent()" required> <br> <br>
+         <label>Enter Your Last Name: </label>
+         <input type="text" required> <br>  <br>
+         <label> Enter Your Email Id: </label>
+         <input type="text" required> <br>  <br>
+         <label>Birth-date:</label>
+         <input type="date"> <br> <br>
+         <label>Gender</label>
+         <input type="radio" name="gender">
+         <label>Female</label>
+         <input type="radio" name="gender">
+         <label>Male</label>
+         <br> <br>
+          <label> Select the Job Role: </label>
+          <select  onchange="changeEvent()" >
+            <option value="Software Developer">Software Developer</option>
+            <option value="QA">QA</option>
+            <option value="BDE">BDE</option>
+            <option value="BA">BA</option>
+          </select> <br> <br>
+        <button type="button" onclick="submitForm()"> Submit </button>
+        </fieldset>
+    </form>
+    <h3 id="msg"></h3>
+
+     <h3> <a href="https://satvasolutions.com/career"> Join Us at Savta Solution</a></h3>
+    <h4>  <a href="https://jobs.satvasolutions.com/jobs/Careers">  Current job Openings </a></h4>
+
+  </body>
+</html>
