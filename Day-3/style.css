@@ -1,0 +1,374 @@
+.layout{
+    width: 100%;
+}
+.container{
+    height: 100%;
+    margin: 40px;
+    border: 1px solid black;
+    /* max-width: 900px; */
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.body{
+    height: 100%;
+    width: 100%;
+}
+
+.profile{
+    display: inline-flex;
+    gap: 10px;
+}
+.circle{
+height: 30px;
+width: 30px;
+border-radius: 50%; /* Makes the image circular */
+object-fit: cover; /* Ensures the image covers the area properly without stretching */
+border: 1px solid black; 
+
+}
+.sidebar{
+    width:150px;
+    border: 1px solid black;
+    min-height: 300px;
+    align-items: center;
+    text-align: center;
+    font-style: Monaco;
+}
+
+.sidebar ul {
+
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.sidebar li {
+    border: 1px solid black;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.sidebar .active{
+    background: #49a1f3;
+}
+.form-body{
+    display: flex;
+}
+.form-container{
+    margin: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: Arial;
+    
+}
+/* Hide all content by default */
+.content {
+    display: none;
+}
+
+/* Show active content */
+.content.active {
+    display: block;
+}
+
+/* Sidebar tab styling */
+.tab {
+    padding: 12px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Highlight active tab */
+.tab.active {
+    background: #89bdee;
+    font-weight: bold;
+}
+
+
+.cus-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-form {
+    position: relative; /* IMPORTANT */
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    width: 190px;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 2px 2px 2px 5px; /* space for icon */
+    border: none;
+    outline: none;
+}
+
+.search-form i {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #67a8f7;
+    pointer-events: none;
+}
+.dropbtn{
+    width: 120px;
+    background-color: transparent;
+}
+.dropbtn i{
+    padding: 10px;
+}
+
+
+.dropdown-content.show {
+    display: block;
+}
+
+.btn2{
+    margin-left: auto;
+    width: 120px;
+    background-color:  #d4e8d3;
+    border: 1px solid green;
+    
+}
+.stat-btn{
+    /* margin-left: 400px; */
+    display: flex;
+    gap: 6px;
+    /* justify-content: space-between; */
+}
+
+
+table {
+    width: 100%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    font-size: medium;
+    font-family: 'Arial', Verdana, Helvetica;
+    border: 2px solid #000;
+}
+th, td {
+    width: 130px;
+    border: 2px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    font-weight: bold;
+}
+.tactive{
+    color: green;
+}
+.tinactive{
+    color: red;
+}
+.tpartially{
+    color:#e2a35a;
+}
+.td i{
+    width: 25px;
+    height: 20px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none; /* remove list bullets */
+    padding: 0px;
+  }
+  
+  .pagination li a {
+    display: block; /* let links fill the list item */
+    padding: 8px 12px;
+    font-size: 14px;
+    font-style: Arial;
+    border: 1px solid gray;
+    color: black;  
+  }
+  .page {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.reportp{
+    font-size: 1px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.btnaud{
+    width:140px;
+    border-radius: 4px;
+    font-size: 10px;
+    margin-left: 790px;
+   background-color: #9dc4d5;
+   padding: 12px;
+   border: 1px solid #3485a7;
+}
+.fyear {
+    width: 100%;
+
+}
+
+.reportable{
+   font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.thighlight{
+    font-weight: bolder;
+    background-color:  #7a777796;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Popup box */
+.modal-content {
+    background: #fff;
+    width: 600px;
+    max-width: 90%;
+    margin: 60px auto;
+    padding: 20px;
+    border-radius: 6px;
+    position: relative;
+}
+/* Invoice Modal */
+.invoice-modal{
+    width:420px;
+    background:#fff;
+    border:1px solid #000;
+    padding:20px;
+    margin:80px auto;
+}
+ 
+.invoice-modal h3{
+    margin:0 0 15px;
+    border-bottom:1px solid #000;
+    padding-bottom:8px;
+}
+ 
+ 
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Form styling */
+.addc {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* each row */
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+/* each field */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.modal-content {
+    background: #fff;
+    width: 600px;
+    max-width: 90%;
+    margin: 60px auto;
+    padding: 45px;
+    border-radius: 6px;
+    position: relative;
+}
+.modal-content label{
+    font-size: 16px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+/* buttons */
+.form-row {
+    padding: 12;
+    display: flex;
+    gap: 30px;
+}
+.form-group textarea{
+    width: 120px;
+}
+.tarea{
+    width: 620px;
+    resize: none;
+}
+.btn-row{
+    margin-left: auto;
+}
+
+.delete-box{
+    width:420px;
+    background:#fff;
+    border:1px solid #000;
+    margin:120px auto;
+    padding:30px;
+    text-align:center;
+}
+ 
+.delete-icon{
+    width:60px;
+    height:60px;
+    border:3px solid #000;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 15px;
+    font-size:28px;
+}
+ 
+.delete-actions{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+ 
+.cancel-btn{
+    padding:6px 18px;
+    border:1px solid #777;
+    background:#fff;
+    border-radius:6px;
+}
+ 
+.delete-btn{
+    padding:6px 22px;
+    border:1px solid #d9534f;
+    background:#f8cfcf;
+    border-radius:6px;
+}
+ 
